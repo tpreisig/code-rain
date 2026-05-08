@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: linear-gradient(225deg, #000, darkblue);
+        min-height: 100vh;
+        color: aliceblue;
+      }
+      form{
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -60%);
+        width: 80%;
+        max-width: 380px;
+        min-height: 220px;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: none;
+        transition: all 0.5s ease;
+        background: rgba(255,255,255,0.1);
+      }
+      form:hover{
+        cursor: pointer;
+        box-shadow: 0 5px 30px rgba(255,255,255,0.5);
+      }
+      input, button{
+        padding: 1rem 0.5rem;
+        margin: 2rem 0;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        color: darkblue;
+        font-size: 0.9rem;
+        text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+        text-align: center;
+        font-weight: 900;
+        background: rgba(255,255,255,0.9);
+      }
+      label{
+        position: absolute;
+        bottom: 0%; left: 0%;
+        transform: translate(20%, -50%);
+        font-size: 1.2rem;
+      }
+    </style>
+    <title>Access</title>
+</head>
+<body>
+  <form method="post" action="/check" name="form" id="user-form">
+    <label for="password">Magician</label>
+    <input type="password" name="password" placeholder="ENTER THE MAGIC WORD TO GET ACCESS">
+  </form>
+</body>
+</html>
