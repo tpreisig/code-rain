@@ -14,7 +14,7 @@ app.use(express.static("public"));
 function magicWordChecker(req, res, next) {
     const password = req.body["password"];
     if (password) {
-        console.log(password);
+        console.log(`🔑 You entered '${password}'`);
 
         if (password === "Magician") {
             userIsAuthorised = true;
@@ -28,14 +28,14 @@ function magicWordChecker(req, res, next) {
 app.use(magicWordChecker);
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/views/index.html");
+    res.sendFile(__dirname + "/views/form.html");
 });
 
 app.post("/check", (req, res) => {
     if (userIsAuthorised) {
         res.sendFile(__dirname + "/views/secret.html");
     } else {
-        res.sendFile(__dirname + "/views/index.html");
+        res.sendFile(__dirname + "/views/form.html");
     }
 });
 
