@@ -1,12 +1,12 @@
 {
-  "name": "magic-form",
+  "name": "code-rain",
   "version": "1.0.0",
   "description": "Handling form data with Node and Express.js",
   "type": "module",
-  "main": "server.js",
+  "main": "fileServer.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "start": "node fileServer.js",
+    "dev": "nodemon fileServer.js"
   },
   "author": "tpr",
   "license": "MIT",
