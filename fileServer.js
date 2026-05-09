@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 
 app.post("/check", (req, res) => {
     if (userIsAuthorised) {
-        res.sendFile(__dirname + "/views/secret.html");
+        res.sendFile(__dirname + "/views/codeRain.html");
     } else {
         res.sendFile(__dirname + "/views/form.html");
     }

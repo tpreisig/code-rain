@@ -1,36 +1,41 @@
 # Code Rain
-
-The `server.js` file sets up an Express.js server to handle form data submissions. It includes middleware for parsing JSON and URL-encoded data, and defines routes to process incoming form data. This setup allows for efficient handling and storage of form data submitted by users.
-
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-orange)
 
+A fun Express.js application that serves a form and reveals a secret page when the correct password is entered.\
+You can easily guess the passward, just give it a try or two 🪄
+
+`fileServer.js` includes middleware and defines routes to process the entered data.
+
+## How To Make It Work
+| ➡️ | Check it out |
+|------|-------------|
+| 1️⃣  | Visit the homepage to see a form |
+| 2️⃣  | Enter the magic word (you can easily guess) |
+| 3️⃣  | If correct, you'll be taken to the secret page |
+| 4️⃣  | If incorrect, you'll stay on the form page to give it another try |
+
+
+
 ## Installation
 
-1. Clone the repository:
+Get the repository and navigate to the directory
    ```bash
-   git clone https://github.com/tpreisig/magic-form.git
+   git clone https://github.com/tpreisig/code-rain.git 
+   cd code-rain
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd magic-form
-   ```
-3. Install dependencies:
+Install the dependencies (body-parser, express)
    ```bash
    npm install
    ```
+Run the code
+   ```bash
+   npm run start
+   ```
 
-## Usage
-
-To start the server, run:
-```bash
-npm start
-````
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Visuals
+![Screenshot](/assets/code-rain.png)
 
 ## Contact
 
